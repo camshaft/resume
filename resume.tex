@@ -1,76 +1,85 @@
-% LaTeX file for resume 
+% Cameron Bytheway's Resume
 % This file uses the resume document class (res.cls)
 
-\documentclass[margin]{res} 
-% the margin option causes section titles to appear to the left of body text 
-\textwidth=5.2in % increase textwidth to get smaller right margin
+\documentclass[margin]{res}
+\textwidth=5.2in
 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-\setlength{\textheight}{10in} % increase text height to fit on 1-page 
-\setlength{\topmargin}{-.4in}
+\setlength{\textheight}{10in}
+\setlength{\topmargin}{-.5in}
 \usepackage[none]{hyphenat}
+\usepackage{hyperref}
 
-\begin{document} 
+\begin{document}
 
-  \name{CAMERON J. BYTHEWAY\\[12pt]} % the \\[12pt] adds a blank line after name
+  \name{CAMERON J. BYTHEWAY\\[12pt]}
 
   \address{\bf  377 N 750 E\\Provo, UT 84606\\(801) 803-8577}
-  \address{bytheway.cameron@gmail.com\\LinkedIn: Cameron Bytheway}
+  \address{bytheway.cameron@gmail.com\\
+           LinkedIn: \href{http://www.linkedin.com/pub/cameron-bytheway/36/a68/993}{Cameron Bytheway}\\
+           Github: \href{http://github.com/CamShaft}{CamShaft}}
 
   \begin{resume}
 
     \section{SYSTEMS}
       \begin{description}
         \item[Languages] \hfill \\
-        Objective-C, Erlang/OTP, C, JavaScript/Node.js, PHP, Haskell, \\
-        C\#, Java, Python, Ruby, Shell, Assembly, ActionScript
+        JavaScript/CoffeeScript/Node.js, Erlang/OTP, Objective-C, PHP, Python,
+        C, Haskell, C\#, Java, Ruby, Shell, Assembly, ActionScript
         \item[Frameworks] \hfill \\
-        Cocoa, Riak Core, Webmachine, Google Closure, Zend Framework, ZeroMQ
+        Ember.js, Backbone, Google Closure, ShareJS, Riak Core, Webmachine,
+        Cocoa, Zend Framework, ZeroMQ, RabbitMQ
         \item[Databases] \hfill \\
-        MySQL, Oracle, Riak, MongoDB, SQLite
+        Riak, Redis, MongoDB, Postgres, MySQL, Oracle, SQLite
       \end{description}
 
     \section{EXPERIENCE}
       {\bf Web Developer} \hfill April 2010-Present \\
       Center for Teaching and Learning - BYU, Provo, UT
       \begin{itemize} \itemsep -2pt
-          \item Designed and developed RESTful web services and database\\
-           schema for BYU's learning management system; used by all \\
-           faculty and students on campus (apx. 30,000 users)
-          \item Created BYU Flashcards learning/memorization web \\
-          application and implemented the Leitner spatial recognition \\
-          algorithm
-          \item Incorporated video streaming/recording in BYU's Digital \\
-          Dialog, a web discussion application
+        \item Designed and developed RESTful web services and database
+         schema for \href{http://lsinfo.byu.edu/}{BYU's learning management system};
+         used by all faculty and students on campus (apx. 30,000 users)
+        \item Created 
+        \href{http://ctl.byu.edu/tools/byu-flashcards}{BYU Flashcards}
+        learning/memorization web application and implemented the Leitner
+        spatial recognition algorithm
+        \item Incorporated video streaming/recording in
+        \href{http://ctl.byu.edu/tools/byu-digital-dialog}{BYU's Digital Dialog},
+        a web discussion application
       \end{itemize}
 
-      {\bf Founder/CEO/CTO} \hfill January 2012-Present \\
+      {\bf Founder/CTO} \hfill January 2012-Present \\
       Nujii Labs L.L.C., Provo, UT 
       \begin{itemize} \itemsep -2pt
-          \item Architected a distributed server system for real-time, \\
-          collaborative audio recording and processing
-          \item Implemented Mac OS client application that interacts \\
-          with the server and manages user interaction
+        \item Architected a distributed server system for real-time,
+        collaborative audio recording and processing
+        \item Implemented cross-platform 
+        \href{https://github.com/nujii/nujiistudio.js}{user interface}
+        using Ember.js, ShareJS, and CoffeeScript
+        \item Constructed a custom build system that streamlines development
       \end{itemize}
 
       {\bf iOS Developer} \hfill January 2011-August 2011 \\
-      Novarad Corporation, American Fork, UT  
+      Novarad Corporation, American Fork, UT
       \begin{itemize} \itemsep -2pt
-          \item Collaborated to develop an iPad application to view x-rays
-          \item Wrote RESTful web services for server interaction
+        \item Collaborated to develop an x-ray viewer iPad application
+        \item Wrote RESTful web services for querying patient x-rays
       \end{itemize}
 
       {\bf iOS Developer} \hfill  August 2010-Present \\
       Bytheway Apps, Provo, UT
       \begin{itemize} \itemsep -2pt
-          \item Created an iPhone/iPod metronome application with 58,000 downloads
-          \item Freelanced a dating app for NiftyDateIdeas.com
+        \item Created an iPhone/iPod
+        \href{http://itunes.apple.com/us/app/backbeat-pro-metronome/id415229485?mt=8}{metronome application}
+        with over 58,000 downloads
+        \item Freelanced a dating app for
+        \href{http://itunes.apple.com/us/app/nifty-date-ideas/id425978808?mt=8}{NiftyDateIdeas.com}
       \end{itemize}
 
     \section{EDUCATION}
       {\bf Bachelor of Science, Computer Science} \hfill 2013 \\
-      Brigham Young University, Provo, UT                 \\
-      Minor in Spanish                                    \\
+      Brigham Young University, Provo, UT\\
+      Minor in Spanish\\
       Major GPA: 3.8
 
     \section{VOLUNTEER}
