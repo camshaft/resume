@@ -1,4 +1,4 @@
 Cameron Bytheway's Resume
 ======
 
-You can download the latest copy [here](https://github.com/downloads/CamShaft/resume/CameronBytheway.pdf)
+You can download the latest copy [here](https://raw.github.com/CamShaft/resume/master/CameronBytheway.pdf)
